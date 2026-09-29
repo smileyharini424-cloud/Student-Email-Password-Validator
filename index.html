@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Email & Password Validator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <header>
+        <div class="logo">
+            ✦ ASHOKA
+            <span>WOMEN'S ENGINEERING COLLEGE</span>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Programs</a>
+            <a href="#">Departments</a>
+            <a href="#">Placements</a>
+            <a href="#">Campus Life</a>
+        </nav>
+
+        <button class="contact-btn">Contact Us</button>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">STUDENT PORTAL</p>
+
+            <h1>
+                Email & Password
+                <br>
+                <span>Validator</span>
+            </h1>
+
+            <p>
+                Automata Theory & Compiler Design
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Login Card -->
+    <section class="validator-section">
+
+        <div class="validator-card">
+
+            <p class="section-title">STUDENT LOGIN</p>
+
+            <h2>Student Login & Validation</h2>
+
+            <div class="line"></div>
+
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your college email"
+            >
+
+
+            <!-- Password -->
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+            >
+
+
+            <!-- Button -->
+            <button
+                class="validate-btn"
+                onclick="validateStudent()"
+            >
+                VALIDATE
+            </button>
+
+
+            <!-- Result -->
+            <div id="result"></div>
+            <!-- DFA Visualization -->
+
+<div class="dfa-section">
+
+    <h3>📧 Email DFA</h3>
+
+    <div class="dfa-container">
+
+        <div class="state" id="email-q0">q0<br><small>START</small></div>
+
+        <span>→</span>
+
+        <div class="state" id="email-q1">q1</div>
+
+        <span>→</span>
+
+        <div class="state" id="email-q2">q2</div>
+
+        <span>→</span>
+
+        <div class="state" id="email-q3">q3</div>
+
+        <span>→</span>
+
+        <div class="state" id="email-q4">q4</div>
+
+        <span>→</span>
+
+        <div class="state accept" id="email-q5">
+            q5<br>
+            <small>ACCEPT</small>
+        </div>
+
+    </div>
+
+
+    <h3>🔐 Password DFA</h3>
+
+    <div class="dfa-container">
+
+        <div class="state" id="pass-q0">
+            q0<br>
+            <small>START</small>
+        </div>
+
+        <span>→</span>
+
+        <div class="state" id="pass-q1">q1</div>
+
+        <span>→</span>
+
+        <div class="state" id="pass-q2">q2</div>
+
+        <span>→</span>
+
+        <div class="state" id="pass-q3">q3</div>
+
+        <span>→</span>
+
+        <div class="state" id="pass-q4">q4</div>
+
+        <span>→</span>
+
+        <div class="state accept" id="pass-q5">
+            q5<br>
+            <small>ACCEPT</small>
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>
+            Student Validation System | Automata Theory Mini Project
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
